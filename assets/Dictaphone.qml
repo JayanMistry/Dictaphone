@@ -108,7 +108,7 @@ Page {
                 // The 'Record' button
                 ImageToggleButton {
                     //rightMargin: ui.du(0.2)
-                    translationX: 45
+                    translationX: 100
                     translationY: -5
                     //horizontalAlignment: HorizontalAlignment.Center
                     //leftMargin: ui.du(0.2)
@@ -148,7 +148,7 @@ Page {
                 //! [3]
                 // The 'Pause' button
                 ImageToggleButton {
-                    translationX: 195
+                    translationX: 140
                     translationY: -5
                     
                     //leftMargin: ui.du(0.2)
