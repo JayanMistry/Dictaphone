@@ -4,10 +4,84 @@ BASEDIR = $$quote($$_PRO_FILE_PWD_)
 device {
     CONFIG(debug, debug|release) {
         profile {
+            INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtSvg) \
+                $$quote(${QNX_TARGET}/usr/include/QtLocationSubset) \
+                $$quote(${QNX_TARGET}/usr/include/QtNfcSubset) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScript) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtOpenGL) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScriptTools) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtTest) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtGui) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtCore) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtDeclarative)
+
+            DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtSvg) \
+                $$quote(${QNX_TARGET}/usr/include/QtLocationSubset) \
+                $$quote(${QNX_TARGET}/usr/include/QtNfcSubset) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScript) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtOpenGL) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScriptTools) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtTest) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtGui) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtCore) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtDeclarative)
+
+            LIBS += -lQtScriptTools \
+                -lQtCore \
+                -lQtScript \
+                -lQtOpenGL \
+                -lQtGui \
+                -lQtNfcSubset \
+                -lQtSvg \
+                -lQtLocationSubset \
+                -lQtDeclarative \
+                -lQtTest \
+                -lQtSensors \
+                -lQtNetwork
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
         } else {
+            INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtSvg) \
+                $$quote(${QNX_TARGET}/usr/include/QtLocationSubset) \
+                $$quote(${QNX_TARGET}/usr/include/QtNfcSubset) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScript) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtOpenGL) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScriptTools) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtTest) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtGui) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtCore) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtDeclarative)
+
+            DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtSvg) \
+                $$quote(${QNX_TARGET}/usr/include/QtLocationSubset) \
+                $$quote(${QNX_TARGET}/usr/include/QtNfcSubset) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScript) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtOpenGL) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScriptTools) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtTest) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtGui) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtCore) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtDeclarative)
+
+            LIBS += -lQtScriptTools \
+                -lQtCore \
+                -lQtScript \
+                -lQtOpenGL \
+                -lQtGui \
+                -lQtNfcSubset \
+                -lQtSvg \
+                -lQtLocationSubset \
+                -lQtDeclarative \
+                -lQtTest \
+                -lQtSensors \
+                -lQtNetwork
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
@@ -17,6 +91,43 @@ device {
 
     CONFIG(release, debug|release) {
         !profile {
+            INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtSvg) \
+                $$quote(${QNX_TARGET}/usr/include/QtLocationSubset) \
+                $$quote(${QNX_TARGET}/usr/include/QtNfcSubset) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScript) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtOpenGL) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScriptTools) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtTest) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtGui) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtCore) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtDeclarative)
+
+            DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtSvg) \
+                $$quote(${QNX_TARGET}/usr/include/QtLocationSubset) \
+                $$quote(${QNX_TARGET}/usr/include/QtNfcSubset) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScript) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtOpenGL) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScriptTools) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtTest) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtGui) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtCore) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtDeclarative)
+
+            LIBS += -lQtScriptTools \
+                -lQtCore \
+                -lQtScript \
+                -lQtOpenGL \
+                -lQtGui \
+                -lQtNfcSubset \
+                -lQtSvg \
+                -lQtLocationSubset \
+                -lQtDeclarative \
+                -lQtTest \
+                -lQtSensors \
+                -lQtNetwork
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
@@ -27,6 +138,43 @@ device {
 simulator {
     CONFIG(debug, debug|release) {
         !profile {
+            INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtSvg) \
+                $$quote(${QNX_TARGET}/usr/include/QtLocationSubset) \
+                $$quote(${QNX_TARGET}/usr/include/QtNfcSubset) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScript) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtOpenGL) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScriptTools) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtTest) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtGui) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtCore) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtDeclarative)
+
+            DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtSvg) \
+                $$quote(${QNX_TARGET}/usr/include/QtLocationSubset) \
+                $$quote(${QNX_TARGET}/usr/include/QtNfcSubset) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScript) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtOpenGL) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtScriptTools) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtTest) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtGui) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtCore) \
+                $$quote(${QNX_TARGET}/usr/include/qt4/QtDeclarative)
+
+            LIBS += -lQtScriptTools \
+                -lQtCore \
+                -lQtScript \
+                -lQtOpenGL \
+                -lQtGui \
+                -lQtNfcSubset \
+                -lQtSvg \
+                -lQtLocationSubset \
+                -lQtDeclarative \
+                -lQtTest \
+                -lQtSensors \
+                -lQtNetwork
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
@@ -43,6 +191,7 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/PlayerPage.qml) \
         $$quote($$BASEDIR/assets/PlayerSheet.qml) \
         $$quote($$BASEDIR/assets/Tape.qml) \
+        $$quote($$BASEDIR/assets/form.qml) \
         $$quote($$BASEDIR/assets/images/background.png) \
         $$quote($$BASEDIR/assets/images/background1.png) \
         $$quote($$BASEDIR/assets/images/background_landscape.png) \
